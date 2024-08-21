@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="This is my personal online resume.">
+    <meta name="author" content="Mario Rodriguez">
+    <title>Mario Rodriguez - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/704484a5db.js"></script>
+
+    <!-- Customized CSS-->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Customized JS-->
+    <script src="js/support.js" defer></script>
+
+    <!-- Shortcut icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/shortcut_icon.png">
+
+    <!-- Customized font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+</head>
+
+<body data-spy="scroll" data-target="#navigation" id="home">
+
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg bg-transaparent navbar-dark fixed-top" id="navigation">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-right" id="navCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#main" class="nav-link" id="test">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" id="test">About Me</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link" id="test">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" id="test">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page -->
+    <header id="main">
+        <div class="container home-inner">
+            <div class="row">
+                <div class="col text-center text-small">
+                    <h1 class="display-3 py-4"><strong>Welcome to my Portfolio</strong></h1>
+                    <p class="display-3">...</p>
+                    <h2 class="display-3">My name is Mario Rodriguez</h2>
+                    <h4>Check footer for ways to contact me!</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section class="py-2 bg-dark border-bottom" id="about">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col">
+                    <h2 class="display-3 text-center"><strong>About Me</strong></h2>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-lg-6 py-3">
+                    <!-- Personal Photo -->
+                    <img src="images/me.jpg" class="img-fluid rounded" />
+                </div>
+                <div class="col-lg-6 py-3">
+                    <p class="lead text-justify">
+                        As a Software Developer at General Motors, I apply my passion and skills in Java to create near real-time streaming applications that 
+                        handle millions of messages per second. I have over 2.5 years of experience in developing, maintaining, and updating these applications 
+                        to meet the needs of our customers and the company.
+
+                        I also collaborate with Data Scientists to integrate machine learning models into our streaming platform, enhancing its functionality 
+                        and performance. I enjoy learning new technologies and languages, and I constantly seek to improve my knowledge and abilities through 
+                        online courses, blogs, and personal projects. My goal is to deliver innovative and reliable solutions that help GM achieve its vision 
+                        of a world with zero crashes, zero emissions, and zero congestion.
+                    </p>
+                    <p class="lead text-justify pb-1">
+                        <u>Hard Skills:</u>
+                        Java, Python, Bash Script, Akka Framework, ELK Stack, Prometheus, Grafana, Docker, Kubernetes, Git
+                    </p>
+                    <p class="lead text-justify pb-1">
+                        <u>Hobbies:</u>
+                        Sports, Hiking, Backpacking, Traveling, Fishing, Photography
+                    </p>
+                    <div class="pt-4 d-flex justify-content-center">
+                        <a href="src/Mario Resume.pdf" class="btn btn-success btn-lg"
+                            download="Mario Resume.pdf">Download my Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="py-2 bg-dark border-top border-bottom" id="projects">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-sm-12 col-sm-offset-2">
+                    <!-- Using .col-sm-12 col-sm-offset-2 to ensure the column will stack upon each other for mobile view -->
+                    <div class="row py-4">
+                        <div class="col">
+                            <h2 class="display-3 text-center"><strong>Projects</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- FabFlix -->
+                        <div class="col-sm-6 py-3">
+                            <img src="images/fabflix-login.JPG" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-sm-6 py-3">
+                            <h3 class="text-center">FabFlix (MVP)</h3>
+                                <div class="card card-body bg-dark border border-light text-justify lead">
+                                    <!-- <p class="card-text text-justify lead"> -->
+                                        Fabflix is an E-commerce application that allows customers to perform 
+                                        various activities on the website (register, login, search movie, buy movie, etc). 
+                                        The project was implemented in a 3-tier approach with MySQL, RESTful web services
+                                        with Java, and HTML/CSS/JavaScrit to create a modern full-stack product.
+                                    <!-- </p> -->
+                                </div>
+                            <p class="lead pt-2">Languages: Java, SQL, HTML, CSS, JavaScript</p>
+                            <p class="lead">Tools: Github, JDBC, Jersey, Jackson, Grizzly, jQuery, MySQL</p>
+                        </div>
+
+                        <!-- ShopAutomatic -->
+                        <div class="col-sm-6 py-3">
+                            <img src="images/shopAutomatic-basic.JPG" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-sm-6 py-3">
+                            <h3 class="text-center">ShopAutomatic</h3>
+                                <div class="card card-body bg-dark border border-light text-justify lead">
+                                    <!-- <p class="card-text text-justify lead"> -->
+                                        ShopAutomatic is an application you can deploy in your machine and allows you 
+                                        to search for an item in multiple sites (Amazon, Ebay, Craiglist, etc.) while 
+                                        automating the whole process of opening the websites, logging in to your personal 
+                                        accounts, searching for the item and adding items in the shopping cart (optional) so 
+                                        you don't have to do it manually. 
+                                    <!-- </p> -->
+                                </div>
+                            <p class="lead pt-2">Languages: Python</p>
+                            <p class="lead">Tools: Selenium, PyQT</p>
+                            <p class="btn btn-success"><a href="https://github.com/mronfire/shopAutomatic">View on Github</a></p>
+                        </div>
+
+                        <!-- Git-Init -->
+                        <div class="col-sm-6 py-3">
+                            <img src="images/git-init-script.JPG" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-sm-6 py-3">
+                            <h3 class="text-center">Git-Init</h3>
+                                <div class="card card-body bg-dark border border-light text-justify lead">
+                                    <!-- <p class="card-text text-justify lead"> -->
+                                        Git-Init is a command line script to automate the process of creating a project repository
+                                        in your GitHub account. In one easy command you can have a project folder created in your
+                                        "project directory"; initialized git and sent a first commit with README and requirements.txt
+                                        file for virtual environment setup.  
+                                    <!-- </p> -->
+                                </div>
+                            <p class="lead pt-2">Languages: Python, Batch</p>
+                            <p class="lead">Tools: GitHub, Virtualenv</p>
+                            <p class="btn btn-success"><a href="https://github.com/mronfire/git-init">View on Github</a></p>
+                        </div>
+
+                        <!-- Another Project Section -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-2 bg-dark border-top" id="contact">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col">
+                    <h2 class="display-4 text-center"><strong>Contacts</strong></h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <a href="mailto:marodriguez92@gmail.com?Subject=From%20Portfolio">
+                                <i class="fas fa-envelope fa-2x mx-1"></i></a>
+                            <a href="https://github.com/JavaD0j0" target="_blank">
+                                <i class="fab fa-github fa-2x mx-1"></i></a>
+                            <a href="https://www.linkedin.com/in/mario-rodriguez-6488a699/" target="_blank">
+                                <i class="fab fa-linkedin fa-2x mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="bg-dark py-4 border-top" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <p>&copy; <span id="year"></span> Mario Rodriguez. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
