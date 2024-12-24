@@ -1,46 +1,49 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const uci = document.getElementById("uci");
+    const cs = document.getElementById("cs");
+    const year = document.getElementById("year");
+    const navigationLinks = document.querySelectorAll("#navigation a");
 
-$("#uci").hover(function () {
-    $(this).css("background-color", "#00386c");
-    $(this).css("color", "#f6aa0d");
-}, function () {
-    $(this).css("background-color", "#343a40");
-    $(this).css("color", "whitesmoke");
-});
+    uci.addEventListener("mouseenter", () => {
+        uci.style.backgroundColor = "#00386c";
+        uci.style.color = "#f6aa0d";
+    });
 
-$("#cs").hover(function () {
-    $(this).css("background-color", "#333");
-    $(this).css("color", "#00cc00")
-}, function () {
-    $(this).css("background-color", "#343a40");
-    $(this).css("color", "whitesmoke");
-});
+    uci.addEventListener("mouseleave", () => {
+        uci.style.backgroundColor = "#343a40";
+        uci.style.color = "whitesmoke";
+    });
 
-$("#year").text(new Date().getFullYear());
+    cs.addEventListener("mouseenter", () => {
+        cs.style.backgroundColor = "#333";
+        cs.style.color = "#00cc00";
+    });
 
-$("body").scrollspy({
-    target: "#navigation"
-});
+    cs.addEventListener("mouseleave", () => {
+        cs.style.backgroundColor = "#343a40";
+        cs.style.color = "whitesmoke";
+    });
 
-//Smooth scroll
-$("#navigation a").on("click", function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
+    year.textContent = new Date().getFullYear();
 
-        const hash = this.hash;
-
-        $("html, body").animate({
-                scrollTop: $(hash).offset().top
-            },
-            800,
-            function () {
-                window.location.hash = hash;
+    navigationLinks.forEach(link => {
+        link.addEventListener("click", event => {
+            if (link.hash !== "") {
+                event.preventDefault();
+                const hash = link.hash;
+                document.querySelector(hash).scrollIntoView({
+                    behavior: "smooth"
+                });
+                history.pushState(null, null, hash);
             }
-        );
-    }
-});
+        });
+    });
 
-//Allowing collapse to be dismissed when click outside of card-body
-$("html body").click(function (e) {
-    if (!$(e.target).is(".card-body"))
-        $(".collapse").collapse("hide");
+    document.body.addEventListener("click", event => {
+        if (!event.target.closest(".card-body")) {
+            document.querySelectorAll(".collapse").forEach(collapse => {
+                collapse.classList.remove("show");
+            });
+        }
+    });
 });
