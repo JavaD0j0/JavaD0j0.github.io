@@ -24,6 +24,9 @@
     <!-- Customized JS-->
     <script src="js/support.js" defer></script>
 
+    <!-- LinkedIn Public Badge -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
     <!-- Shortcut icon-->
     <link rel="shortcut icon" type="image/x-icon" href="images/shortcut_icon.png">
 
@@ -58,8 +61,13 @@
                 <div class="col text-center text-small">
                     <h1 class="display-3 py-4"><strong>Welcome to my Portfolio</strong></h1>
                     <p class="display-3">...</p>
-                    <h2 class="display-3">My name is Mario Rodriguez</h2>
-                    <h4>Check footer for ways to contact me!</h4>
+                    <h2 class="display-3 badge-base LI-profile-badge" data-locale="en_US" data-size="large" 
+                    data-theme="dark" data-type="HORIZONTAL" data-vanity="mario-rodriguez-6488a699" data-version="v1">
+                        <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/mario-rodriguez-6488a699?trk=profile-badge">
+                            My name is Mario Rodriguez
+                        </a>
+                    </h2>
+                    <h5>(Click my name to go straight to my LinkedIn Page!)</h5>
                 </div>
             </div>
         </div>
@@ -92,12 +100,56 @@
                         Additionally, I am an avid sports enthusiast, currently passionate about golf and pickleball.
                     </p>
                     <p class="lead text-justify pb-1">
-                        <u>Hard Skills:</u>
-                        Java, Python, Akka Framework, ELK Stack, Prometheus, Grafana, Docker, Kubernetes, Git
+                        <u>Tech Skills:</u>
+                        <table class="table table-dark">
+                            <tr>
+                                <th><u>Category</u></th>
+                                <th><u>Skills</u></th>
+                            </tr>
+                            <tr>
+                                <td><b>Programming Languages:</b></td>
+                                <td>Java, Python, Bash</td>
+                            </tr>
+                            <tr>
+                                <td><b>Big Data & Streaming Technologies:</b></td>
+                                <td>Akka Streams, Kafka, Apache Spark, Hadoop</td>
+                            </tr>
+                            <tr>
+                                <td><b>Databases:</b></td>
+                                <td>Elasticsearch, MySQL, PostgreSQL, S3</td>
+                            </tr>
+                            <tr>
+                                <td><b>Cloud Platforms:</b></td>
+                                <td>Azure (Event Hubs, DevOps)</td>
+                            </tr>
+                            <tr>
+                                <td><b>Data Visualization & Monitoring:</b></td>
+                                <td>Prometheus, Loki, Grafana, Kibana, Kamon, Cinnamon</td>
+                            </tr>
+                            <tr>
+                                <td><b>CI/CD & Containerization:</b></td>
+                                <td>Azure Pipelines, GitHub Actions, Docker, Kubernetes</td>
+                            </tr>
+                        </table>
                     </p>
                     <p class="lead text-justify pb-1">
                         <u>Hobbies:</u>
-                        Sports, Hiking, Backpacking, Traveling, Fishing, Photography
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-futbol"></i> Sports</li>
+                                    <li><i class="fas fa-hiking"></i> Hiking</li>
+                                    <li><i class="fas fa-campground"></i> Backpacking</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-plane"></i> Traveling</li>
+                                    <li><i class="fas fa-fish"></i> Fishing</li>
+                                    <li><i class="fas fa-camera"></i> Photography</li>
+                                </ul>
+                            </div>
+                        </div>
                     </p>
                     <div class="pt-4 d-flex justify-content-center">
                         <a href="src/Mario's Resume.pdf" class="btn btn-success btn-lg"
